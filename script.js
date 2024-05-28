@@ -1,5 +1,5 @@
   let secretNumber = Math.floor(Math.random() * 100) + 1;
-  let chances = 5;
+  let chances = 3;
 
   function checkGuess() {
     const userGuess = parseInt(document.getElementById("userGuess").value);
@@ -35,7 +35,7 @@
 
    function replay() {
      secretNumber = Math.floor(Math.random() * 100) + 1;  
-     chances = 5;
+     chances = 3;
 
      document.getElementById("userGuess").value = "";
      document.getElementById("result").innerHTML = "";
